@@ -7,6 +7,7 @@ export default function EbsHeader() {
   const handleChange = (e) => setSearch(e.target.value);
   const searchClick = () => search && alert(search);
   const logIn = () => alert("нэвтэрлээ");
+
   const leftHeader = (
     <div className={styles.left}>
       <div className={styles.logo}>

@@ -7,21 +7,26 @@ const cursesData = require("../../localData/cursesData.json");
 export default function EbsPage() {
   const [selectIdx, setSelectIdx] = useState(0);
   const handleSelectIdx = (idx) => setSelectIdx(idx);
+
+  const curses = (
+    <div className={styles.curses}>
+      {selectIdx !== 0 ? (
+        <h1>{selectIdx}</h1>
+      ) : (
+        cursesData.map((el, idx) => (
+          <div className={styles.curse} key={idx}>
+            <CurseCard data={el} key={idx} />
+          </div>
+        ))
+      )}
+    </div>
+  );
+
   return (
     <div className={styles.container}>
       <EbsHeader />
       <Profile handleSelectIdx={handleSelectIdx} />
-      <div className={styles.curses}>
-        {selectIdx !== 0 ? (
-          <h1>{selectIdx}</h1>
-        ) : (
-          cursesData.map((el, idx) => (
-            <div className={styles.curse} key={idx}>
-              <CurseCard data={el} key={idx} />
-            </div>
-          ))
-        )}
-      </div>
+      {curses}
     </div>
   );
 }

@@ -3,6 +3,7 @@ import { BiExit } from "react-icons/all";
 import ProfileMenu from "../profileMenu/ProfileMenu";
 export default function Profile(props) {
   const logOut = () => alert("гарлаа");
+
   const studentInfo = (
     <div className={styles.info}>
       <div className={styles.avatar}></div>
@@ -18,6 +19,7 @@ export default function Profile(props) {
       </div>
     </div>
   );
+
   return (
     <div className={styles.container}>
       {studentInfo}
