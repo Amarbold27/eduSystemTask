@@ -1,0 +1,98 @@
+@import "../../variables.scss";
+.container {
+  background-color: $page-header-green;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  padding-left: $space;
+  padding-right: $space;
+  align-items: center;
+  .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+    .logo {
+      color: white;
+      font-weight: 500;
+      font-size: 25px;
+      width: 20%;
+      display: flex;
+      justify-content: left;
+    }
+    .subMenu {
+      width: 80%;
+      display: flex;
+      justify-content: left;
+      a {
+        padding: 0 20px 0 20px;
+        text-decoration: none;
+        color: white;
+        opacity: 0.7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        transition: all 0.3s ease-in;
+      }
+      .activeClass {
+        background-color: $header-darkgreen;
+        height: 50px;
+        border-radius: 5px;
+        opacity: 1;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+    .searchDiv {
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      position: relative;
+      width: 70%;
+      input {
+        width: 100%;
+        height: 50px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        padding: 0 40px 0 20px;
+        &::placeholder {
+          opacity: 0.5;
+          font-weight: 600;
+        }
+      }
+      .icon {
+        color: gray;
+        opacity: 0.7;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 0;
+        margin: 10px 10px;
+        cursor: pointer;
+      }
+    }
+    .buttonDiv {
+      display: flex;
+      flex-direction: row-reverse;
+      width: 30%;
+      .button {
+        width: 70%;
+        height: 50px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        color: $header-darkgreen;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+}

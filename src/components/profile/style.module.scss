@@ -1,0 +1,67 @@
+@import "../../variables.scss";
+@use "sass:math";
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  padding: 0 $space 0 $space;
+  height: 200px;
+  background-color: $background-gray;
+  .info {
+    display: flex;
+    flex-direction: row;
+    padding-top: $space;
+    padding-bottom: $space;
+    height: 50px;
+    width: 100%;
+    border-bottom: 2px solid rgba(219, 219, 219, 0.404);
+    align-items: center;
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: $avatar-color;
+      margin-right: $space;
+    }
+    .introInfo {
+      width: 70%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      span {
+        text-align: left;
+        &:first-child {
+          font-weight: 700;
+          margin-bottom: 5px;
+        }
+        &:last-child {
+          opacity: 0.5;
+          font-weight: 500;
+          font-size: small;
+        }
+      }
+    }
+    .logOutbutton {
+      width: 27%;
+      display: flex;
+      flex-direction: row-reverse;
+      .button {
+        width: 100px;
+        color: $red;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        cursor: pointer;
+        .icon {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .menu {
+    width: 100%;
+    height: 100%;
+  }
+}

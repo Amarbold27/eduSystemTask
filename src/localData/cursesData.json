@@ -1,0 +1,49 @@
+[
+    {
+        "name": "Монгол хэл",
+        "desc": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "section": 20,
+        "curse": 144
+    },
+    {
+        "name": "Физик",
+        "desc": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "section": 24,
+        "curse": 120
+    },
+    {
+        "name": "Хими",
+        "desc": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "section": 18,
+        "curse": 150
+    },
+    {
+        "name": "Математик",
+        "desc": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "section": 16,
+        "curse": 121
+    },
+    {
+        "name": "Биологи",
+        "desc": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "section": 26,
+        "curse": 110
+    },
+    {
+        "name": "Эрүүл мэнд",
+        "desc": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "section": 15,
+        "curse": 100
+    },
+    {
+        "name": "Англи хэл",
+        "desc": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "section": 30,
+        "curse": 125
+    },
+    {
+        "name": "Биеийн тамир",
+        "desc": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "section": 50
+    }
+]

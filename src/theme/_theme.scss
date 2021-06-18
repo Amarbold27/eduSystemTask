@@ -1,0 +1,27 @@
+@import "../variables.scss";
+.navLink {
+  text-decoration: none;
+  color: $text-gray;
+  font-size: 20px;
+  margin-right: $space;
+  cursor: pointer;
+  white-space: nowrap;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.activeLink {
+  text-decoration: none;
+  color: $page-header-green;
+  font-size: 20px;
+  margin-right: $space;
+  cursor: pointer;
+  white-space: nowrap;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid $page-header-green;
+  margin-bottom: 3px;
+}

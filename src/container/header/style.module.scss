@@ -1,0 +1,25 @@
+@import "../../variables.scss";
+.container {
+  background-color: $header-darkgreen;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  padding: 0 $space 0 $space;
+  a {
+    margin: 0 45px 0 0;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0.6;
+    font-size: 15px;
+    transition: all 0.2s ease 0s;
+  }
+  .activeClass {
+    opacity: 1;
+    border-bottom: 3px solid white;
+    margin-bottom: 3px;
+  }
+}

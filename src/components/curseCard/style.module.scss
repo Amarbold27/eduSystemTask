@@ -1,0 +1,59 @@
+@import "../../variables.scss";
+.container {
+  padding: $space;
+  margin: $space;
+  margin-bottom: 0;
+  height: 160px;
+  background-color: $background-gray;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  .avatarContainer {
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: black;
+      margin-right: $space;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    .curseName {
+      font-size: 30px;
+      font-weight: 300;
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+    .curseDesc {
+      color: $text-gray;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      .buttonItem {
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        color: $text-gray;
+        span {
+          font-size: 20px;
+          margin: 5px;
+        }
+        &:last-child {
+          color: $page-header-green;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
