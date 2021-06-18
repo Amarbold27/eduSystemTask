@@ -11,7 +11,7 @@ export default function CurseCard(props) {
       </div>
       <div className={styles.buttonItem}>
         <FiBookmark />
-        <span>{props.data.curse}</span>
+        <span>{props.data.curse}-н хичээл</span>
       </div>
       <div className={styles.buttonItem} onClick={continueHandler}>
         <span>Үргэлжлүүлэх</span>
