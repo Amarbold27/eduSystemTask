@@ -1,0 +1,30 @@
+@import "../../variables.scss";
+.container {
+  width: 100%;
+  height: 250px;
+  background-color: $footer-bg;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .text {
+    color: white;
+    margin-bottom: $space;
+    span {
+      color: $text-gray;
+    }
+  }
+  .media {
+    display: flex;
+    flex-direction: row;
+    div {
+      width: 40px;
+      height: 40px;
+      margin: 10px;
+      border-radius: 50%;
+      background-color: $footer-avatar-bg;
+    }
+  }
+}

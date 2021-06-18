@@ -11,7 +11,9 @@ export default function EbsPage() {
   const curses = (
     <div className={styles.curses}>
       {selectIdx !== 0 ? (
-        <h1>{selectIdx}</h1>
+        <div className={styles.index}>
+          <h1>{selectIdx}</h1>
+        </div>
       ) : (
         cursesData.map((el, idx) => (
           <div className={styles.curse} key={idx}>
